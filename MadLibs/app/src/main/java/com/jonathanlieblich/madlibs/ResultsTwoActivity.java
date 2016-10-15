@@ -20,15 +20,14 @@ public class ResultsTwoActivity extends AppCompatActivity {
 
         String adj1 = entered.getStringExtra("ADJ1");
         String adj2 = entered.getStringExtra("ADJ2");
-        String noun1 = entered.getStringExtra("NOUN1");
-        String noun2 = entered.getStringExtra("NOUN2");
+        String verb = entered.getStringExtra("VERB");
+        String noun = entered.getStringExtra("NOUN");
         String animal = entered.getStringExtra("ANIMAL");
         String game = entered.getStringExtra("GAME");
 
-        String result = "A vacation is when you take a trip to some " + adj1 + " place with"
-                + "your " + adj2 + " family. Usually, you go to some place that is near a " + noun1
-                + "or up on a " + noun2 + ". A good vacation place is one where you can ride "
-                + animal + " or play " + game + ".";
+        String result = "One of the most " + adj1 + " aspects of " + game + " is being able to "
+                + verb + " the " + noun + ". Only three cases of this have been documented, "
+                + "one of which involved the " + adj2 + " use of a " + animal + ".";
 
         mResult.setText(result);
 

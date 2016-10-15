@@ -22,7 +22,7 @@ public class EnterWordsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_words);
-        //EditText fields which pass each word into ShowResultActivity
+
         mAdjective1 = (EditText) findViewById(R.id.adjective1);
         mAdjective2 = (EditText) findViewById(R.id.adjective2);
         mNoun1 = (EditText) findViewById(R.id.noun1);

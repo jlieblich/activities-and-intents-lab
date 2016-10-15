@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.jonathanlieblich.madlibs.R.id.animal;
+
 public class ResultsThreeActivity extends AppCompatActivity {
     private TextView mResult;
     private Button mBackButton;
@@ -22,13 +24,12 @@ public class ResultsThreeActivity extends AppCompatActivity {
         String adj2 = entered.getStringExtra("ADJ2");
         String noun1 = entered.getStringExtra("NOUN1");
         String noun2 = entered.getStringExtra("NOUN2");
-        String animal = entered.getStringExtra("ANIMAL");
-        String game = entered.getStringExtra("GAME");
+        String verb = entered.getStringExtra("VERB");
+        String celeb = entered.getStringExtra("CELEB");
 
-        String result = "A vacation is when you take a trip to some " + adj1 + " place with"
-                + "your " + adj2 + " family. Usually, you go to some place that is near a " + noun1
-                + "or up on a " + noun2 + ". A good vacation place is one where you can ride "
-                + animal + " or play " + game + ".";
+        String result = "Something often " + verb + " by many is " + celeb + "'s ability to"
+                + " find a " + adj1 + " " + noun1 + ". Experts in human behavior attribute this "
+                + adj2 + " response to our brain's hard-wired desire for " + noun2 + ".";
 
         mResult.setText(result);
 

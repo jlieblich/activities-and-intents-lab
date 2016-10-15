@@ -11,8 +11,8 @@ import android.widget.Toast;
 public class WordsTwoActivity extends AppCompatActivity {
     private EditText mAdjective1;
     private EditText mAdjective2;
-    private EditText mNoun1;
-    private EditText mNoun2;
+    private EditText mVerb;
+    private EditText mNoun;
     private EditText mAnimal;
     private EditText mGame;
     private Button mSubmit;
@@ -24,8 +24,8 @@ public class WordsTwoActivity extends AppCompatActivity {
 
         mAdjective1 = (EditText) findViewById(R.id.adjective1);
         mAdjective2 = (EditText) findViewById(R.id.adjective2);
-        mNoun1 = (EditText) findViewById(R.id.noun1);
-        mNoun2 = (EditText) findViewById(R.id.noun2);
+        mVerb = (EditText) findViewById(R.id.verb);
+        mNoun = (EditText) findViewById(R.id.noun);
         mAnimal = (EditText) findViewById(R.id.animal);
         mGame = (EditText) findViewById(R.id.game);
         mSubmit = (Button) findViewById(R.id.submit);
@@ -34,18 +34,18 @@ public class WordsTwoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(mAdjective1.getText().length() == 0||mAdjective2.getText().length() == 0
-                        ||mNoun1.getText().length() == 0||mNoun2.getText().length() == 0
+                        ||mVerb.getText().length() == 0||mNoun.getText().length() == 0
                         ||mAnimal.getText().length() == 0|| mGame.getText().length() == 0) {
                     Toast toast = Toast.makeText(getApplicationContext(), "Please fill all fields",
                             Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    Intent finalScreen = new Intent(WordsTwoActivity.this, ShowResultActivity.class);
+                    Intent finalScreen = new Intent(WordsTwoActivity.this, ResultsTwoActivity.class);
 
                     finalScreen.putExtra("ADJ1", mAdjective1.getText().toString());
                     finalScreen.putExtra("ADJ2", mAdjective2.getText().toString());
-                    finalScreen.putExtra("NOUN1", mNoun1.getText().toString());
-                    finalScreen.putExtra("NOUN2", mNoun2.getText().toString());
+                    finalScreen.putExtra("VERB", mVerb.getText().toString());
+                    finalScreen.putExtra("NOUN", mNoun.getText().toString());
                     finalScreen.putExtra("ANIMAL", mAnimal.getText().toString());
                     finalScreen.putExtra("GAME", mGame.getText().toString());
 

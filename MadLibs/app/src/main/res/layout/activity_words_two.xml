@@ -31,8 +31,8 @@
         android:text=""/>
 
     <EditText
-        android:id="@+id/noun1"
-        android:hint="Noun"
+        android:id="@+id/verb"
+        android:hint="Verb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/adjective2"
@@ -42,11 +42,11 @@
         android:text=""/>
 
     <EditText
-        android:id="@+id/noun2"
+        android:id="@+id/noun"
         android:hint="Noun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/noun1"
+        android:layout_below="@id/verb"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:inputType="text"
@@ -54,10 +54,10 @@
 
     <EditText
         android:id="@+id/animal"
-        android:hint="Animal (plural)"
+        android:hint="Animal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/noun2"
+        android:layout_below="@id/noun"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:inputType="text"
@@ -80,6 +80,6 @@
         android:layout_centerHorizontal="true"
         android:text="SUBMIT"
         android:layout_below="@id/game"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="32dp" />
 
 </RelativeLayout>
