@@ -1,6 +1,5 @@
 package com.jonathanlieblich.madlibs;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class EnterWordsActivity extends AppCompatActivity {
+public class WordsThreeActivity extends AppCompatActivity {
     private EditText mAdjective1;
     private EditText mAdjective2;
     private EditText mNoun1;
@@ -21,8 +20,7 @@ public class EnterWordsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enter_words);
-        //EditText fields which pass each word into ShowResultActivity
+        setContentView(R.layout.activity_words_three);
         mAdjective1 = (EditText) findViewById(R.id.adjective1);
         mAdjective2 = (EditText) findViewById(R.id.adjective2);
         mNoun1 = (EditText) findViewById(R.id.noun1);
@@ -41,7 +39,7 @@ public class EnterWordsActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    Intent finalScreen = new Intent(EnterWordsActivity.this, ShowResultActivity.class);
+                    Intent finalScreen = new Intent(WordsThreeActivity.this, ShowResultActivity.class);
 
                     finalScreen.putExtra("ADJ1", mAdjective1.getText().toString());
                     finalScreen.putExtra("ADJ2", mAdjective2.getText().toString());

@@ -7,15 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ShowResultActivity extends AppCompatActivity {
+public class ResultsThreeActivity extends AppCompatActivity {
     private TextView mResult;
     private Button mBackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_result);
-
+        setContentView(R.layout.activity_results_three);
         Intent entered = new Intent(getIntent());
         mResult = (TextView) findViewById(R.id.result);
 

@@ -16,7 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".EnterWordsActivity" />
-        <activity android:name=".ShowResultActivity"></activity>
+        <activity android:name=".ShowResultActivity" />
+        <activity android:name=".WordsTwoActivity" />
+        <activity android:name=".WordsThreeActivity" />
+        <activity android:name=".ResultsTwoActivity" />
+        <activity android:name=".ResultsThreeActivity"></activity>
     </application>
 
 </manifest>

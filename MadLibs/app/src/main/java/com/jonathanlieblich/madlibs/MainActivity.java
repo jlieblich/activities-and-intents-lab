@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mGameStart;
+    private Button mGame1Start;
+    private Button mGame2Start;
+    private Button mGame3Start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,13 +17,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Main menu with a start button and a background picture
         //Start button with intent leading to EnterWordsActivity
-        mGameStart = (Button) findViewById(R.id.start);
+        mGame1Start = (Button) findViewById(R.id.start);
+        mGame2Start = (Button) findViewById(R.id.start2);
+        mGame3Start = (Button) findViewById(R.id.start3);
 
-        mGameStart.setOnClickListener(new View.OnClickListener() {
+        mGame1Start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent toWordEntry = new Intent(MainActivity.this, EnterWordsActivity.class);
                 startActivity(toWordEntry);
+            }
+        });
+
+        mGame2Start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toWordEntry2 = new Intent(MainActivity.this, WordsTwoActivity.class);
+                startActivity(toWordEntry2);
+            }
+        });
+
+        mGame3Start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toWordEntry3 = new Intent(MainActivity.this, WordsThreeActivity.class);
+                startActivity(toWordEntry3);
             }
         });
     }

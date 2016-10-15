@@ -22,11 +22,24 @@
 
     <Button
         android:id="@+id/start"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Start Game"
-        android:shadowColor="#000001"
-        android:alpha="0.6"
-        />
+        android:text="Game One" />
+
+    <Button
+        android:id="@+id/start2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start"
+        android:text="Game Two"/>
+
+    <Button
+        android:id="@+id/start3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start2"
+        android:text="Game Three"/>
 </RelativeLayout>
